@@ -1,0 +1,39 @@
+# /Users/dngmon/.config/tmuxinator/main.yml
+
+name: main
+root: ~/wave
+
+windows:
+  - wave:
+      - git pull
+      - was
+  - identity:
+      - git pull
+      - cd ~/wave/src/identity/
+      - was
+  - api:
+      - git pull
+      - cd ~/wave/src/api/
+      - was
+  - reef:
+      - git pull
+      - cd ~/wave/src/reef/
+      - was
+  - accounting:
+      - git pull
+      - cd ~/wave/src/accounting/
+      - was
+  - next-acc:
+      - git pull
+      - cd ~/wave/src/next-accounting/
+      - was
+  - next-wave:
+      - git pull
+      - cd ~/wave/src/next-wave/
+      - was
+  - notes:
+      - nvw
+  - nvim:
+      - cd ~/wave/src/next-accounting/
+      - source .venv/bin/activate.fish
+      - nvim .

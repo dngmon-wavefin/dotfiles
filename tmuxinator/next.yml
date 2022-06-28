@@ -1,0 +1,20 @@
+# /Users/dngmon/.config/tmuxinator/next.yml
+
+name: next
+root: ~/wave
+
+windows:
+  - yarn:
+      - cd ~/wave/src/next-wave/
+      - nvm use 16.13.0
+  - notes:
+      - cd ~/wave/src/next-wave/
+  - lighthouse:
+      - z lighthouse
+      - nvm use 14.19.1
+  - nvim:
+      - cd ~/wave/src/next-wave/
+      - nvm use 16.13.0
+  - git:
+      - cd ~/wave/src/next-wave/
+      - nvm use 16.13.0
